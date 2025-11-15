@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>BMI Calculator</h1>
+
+  <div class="calculator">
+    <div class="unit-toggle">
+      <label>
+        <input type="radio" name="unit" value="metric" checked />
+        Metric (kg/cm)
+      </label>
+      <label>
+        <input type="radio" name="unit" value="imperial" />
+        Imperial (lb/in)
+      </label>
+    </div>
+
+    <input type="number" id="weight" placeholder="Weight" min="1" />
+    <input type="number" id="height" placeholder="Height" min="1" />
+
+    <button id="calculate">Calculate BMI</button>
+
+    <div class="result" id="result"></div>
+    <div class="category" id="category"></div>
+  </div>
+
+  <div class="history">
+    <h2>History</h2>
+    <ul id="historyList"></ul>
+    <button id="clearHistory">Clear History</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
